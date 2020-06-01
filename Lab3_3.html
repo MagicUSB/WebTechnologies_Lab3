@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 3</title>
+    <style>
+        body {
+            background: #000000;
+        }
+
+        .css {
+            position: absolute;
+            background: #6495c4;
+            width: 30px;
+            height: 30px;
+            left: 70px;
+            top: 40px;
+            border: 3px solid #fff;
+            cursor: pointer;
+            border-radius: 19px;
+            -webkit-border-radius: 19px;
+            -moz-border-radius: 19px;
+
+        }
+
+        #round {
+            position: absolute;
+            left: 50%;
+            margin-left: -250px;
+            top: 100px;
+            width: 500px;
+            height: 500px;
+            border: 5px solid #6495c4;
+            border-radius: 250px;
+            -webkit-border-radius: 250px;
+            -moz-border-radius: 250px;
+        }
+    </style>
+    <script type="text/javascript" src="animation.js"></script>
+</head>
+
+<body>
+<div id="round">
+    <div id="ball" class="css" onmouseenter="stopAnim()" onmouseleave="animation()"></div>
+    <button onclick="animation();">Click!</button>
+</div>
+<div>
+    <a href="Lab3_1.html">Завдання 1</a>
+    <a href="Lab3_2.html">Завдання 2</a>
+</div>
+</body>
+
+</html>

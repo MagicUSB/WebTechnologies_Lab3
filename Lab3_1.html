@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="checkingFunctions.js"></script>
+</head>
+<body>
+<form>
+    <div class="form-group">
+        <input type="text" id="nameInput" class="form-control" placeholder="Ім'я" required
+               oninvalid="this.setCustomValidity('Допустимі лише літери кирилиці та латиниці!')"
+               oninput="setCustomValidity('')">
+    </div>
+    <div class="form-group">
+        <input type="text" id="surnameInput" class="form-control" placeholder="Прізвище" required
+               oninvalid="this.setCustomValidity('Допустимі лише літери кирилиці та латиниці!')"
+               oninput="setCustomValidity('')">
+    </div>
+    <div class="form-group">
+        <input type="text" id="addressInput" class="form-control" placeholder="Адреса" required>
+    </div>
+    <div class="form-group">
+        <input type="text" id="townInput" class="form-control" placeholder="Місто" required>
+    </div>
+    <div class="form-group">
+        <input type="text" id="countryInput" class="form-control" placeholder="Країна" required>
+    </div>
+    <div class="form-group">
+        <input type="number" value="10000" min="10000" max="99999" id="postcodeInput" class="form-control"
+               placeholder="Поштовий індекс" required>
+    </div>
+    <div class="form-group">
+        <input type="email" id="emailInput" class="form-control" placeholder="E-mail" required>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" onclick="checkInput()">Перевірити введені дані!</button>
+    </div>
+</form>
+<div class="form-group">
+    <a href="Lab3_2.html">Завдання 2</a>
+    <a href="Lab3_3.html">Завдання 3</a>
+</div>
+</body>
+</html>
